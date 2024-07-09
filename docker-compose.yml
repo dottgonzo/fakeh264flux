@@ -1,0 +1,13 @@
+services:
+  fakeh264flux:
+    image: dottgonzo/fakeh264flux:stable
+    network_mode: "host"
+    environment:
+      RTSPURI: "rtsp://localhost:8554/fakeh264flux"
+    restart:
+      always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
