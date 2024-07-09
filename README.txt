@@ -1,0 +1,1 @@
+docker run --network host -e "RTMPURI=rtmp://localhost:1935/live/aaa?psk=aaa" registry.gitlab.com/dottgonzo/fakeh264flux:latest
